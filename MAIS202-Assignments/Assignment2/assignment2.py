@@ -180,7 +180,7 @@ def vectorize_all(reviews, vocab):
   all_bags = []
   for review in reviews:
     # list contains the bag of words and the corresponding score
-    bag_vector = [vectorize(review, vocab), review[1]]
+    bag_vector = [vectorize(review[0], vocab), review[1]]
     all_bags.append(bag_vector)
   return all_bags
       
